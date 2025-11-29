@@ -14,7 +14,7 @@ class SpringSecurityApplicationTests {
 
 	@Test
 	void contextLoads() {
-        User user = new User(2L,"riyaz@gmail.com","1234");
+        User user = new User(2L,"riyaz@gmail.com","1234","riyaz");
         System.out.println("Token Generation");
         String token = jwtService.generateAccessToken(user);
         System.out.println(token);
